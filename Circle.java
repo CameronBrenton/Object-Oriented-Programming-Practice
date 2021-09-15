@@ -7,14 +7,14 @@ public class Circle {
 		color = "red";
 	}
 
-	public Circle(double r) {
-		radius = r;
+	public Circle(double radius) {
+		this.radius = radius;
 		color = "red";
 	}
 
-	public Circle(double r, String c) {
-		radius = r;
-		color = c;
+	public Circle(double radius, String color) {
+		this.radius = radius;
+		this.color = color;
 	}
 
 	public double getRadius(){
@@ -33,13 +33,13 @@ public class Circle {
 		return color;
 	}
 
-	public void setRadius(double newRadius) {
-		radius = newRadius;
+	public void setRadius(double radius) {
+		this.radius = radius;
 	}
 
-	public void setColor(String newColor) {
-		color = newColor;
+	public void setColor(String color) {
+		this.color = color;
 	}
 	
-	
+
 }
