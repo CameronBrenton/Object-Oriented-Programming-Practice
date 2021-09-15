@@ -13,7 +13,10 @@ public class TestCircle {
 		Circle c4 = new Circle(4.0, "green");
 		System.out.println("The circle has a radius of "
 		+ c4.getRadius() + " and has the color " + c4.getColor());
-
-		System.out.println(c1.radius);
+		c4.setRadius(5.0);
+		System.out.println("The radius is: " + c4.getRadius());
+		c4.setColor("blue");
+		System.out.println("The color is: " + c4.getColor());
+		
 	}
 }
