@@ -33,5 +33,13 @@ public class Circle {
 		return color;
 	}
 
+	public void setRadius(double newRadius) {
+		radius = newRadius;
+	}
+
+	public void setColor(String newColor) {
+		color = newColor;
+	}
+	
 	
 }
