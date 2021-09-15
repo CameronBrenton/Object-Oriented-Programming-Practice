@@ -18,5 +18,8 @@ public class TestCircle {
 		c4.setColor("blue");
 		System.out.println("The color is: " + c4.getColor());
 		
+		c4.toString();
+		System.out.println(c4);
+		System.out.println("Operator '+' invokes toString() too: " + c4);
 	}
 }
