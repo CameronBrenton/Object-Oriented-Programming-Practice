@@ -40,6 +40,10 @@ public class Circle {
 	public void setColor(String color) {
 		this.color = color;
 	}
+
+	public String toString() {
+		return "Circle[radius = " + radius + " color = " + color + "]";
+	}
 	
 
 }
