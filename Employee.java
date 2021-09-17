@@ -2,13 +2,23 @@ public class Employee {
 	private int id;
 	private String firstName;
 	private String lastName;
-	private int salary;
+	private double salary;
+	static int count = 0;
 
-	public Employee(int id, String firstName, String lastName, int salary) {
+	public Employee(int id, String firstName, String lastName, double salary) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.salary = salary;
+		count++;
+	}
+
+	public Employee(Employee e) {
+		this.id = e.id;
+		this.firstName = e.firstName;
+		this.lastName = e.lastName;
+		this.salary = e.salary;
+		count++;
 	}
 
 	public int getID() {
@@ -27,23 +37,24 @@ public class Employee {
 		return firstName + "" + lastName;
 	}
 
-	public int getSalary() {
+	public double getSalary() {
 		return salary;
 	}
 
-	public void setSalary(int salary) {
+	public void setSalary(double salary) {
 		this.salary = salary;
 	}
 
-	public int getAnnualSalary() {
+	public double getAnnualSalary() {
 		return salary  * 12;
 	}
 
-	public int raiseSalary(int percent) {
-		return salary += salary * percent / 100;
+	public double raiseSalary(int percent) {
+		salary = salary + (salary * percent / 100);
+		return salary;
 	}
 
-	public toString() {
+	public String toString() {
 		return "Employee [id = " + id + ", firstName = " + firstName + ", lastName = " + lastName + ", salary = " + salary + "]";
 	}
 
